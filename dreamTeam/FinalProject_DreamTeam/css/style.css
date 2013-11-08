@@ -42,7 +42,7 @@ position:relative
 
 /* Global Structure */
 .main {	margin:0 auto;	width:960px}
-.body1 {background:url(../images/bg_top_img.jpg) top center no-repeat}
+.body1 {background:url(../images/Seafood-Dish.jpg) top center no-repeat}
 .body2 {background:#faf3ed} 
 .body3 {background:url(../images/bg_bot.jpg) top center repeat}
 .body4 {background:url(../images/bg_bot_img.jpg) top center no-repeat}
@@ -73,8 +73,8 @@ background:url(../images/logo.png) 0 0 no-repeat;
 width:259px;height:94px;
 text-indent:-9999px;
 padding-bottom:8px; 
-padding-right:20px;
-margin-left:-20px;
+padding-right:23px;
+margin-left:-25px;
 }
 
 #top_nav {
@@ -109,25 +109,27 @@ padding-top:50px;
 
 #menu li {
 float:left;
-padding-left:18px;
+padding-left:0px;
 }
 
 #menu li a {
+background:#771b0e;
 display:block;
 font-size:22px;
 font-style:bold;
 color:#faf3ed;
 line-height:40px;
-padding-top:15px;
-padding-left:7px;
-padding-right:7px;
+padding-top:10px;
+padding-left:21px;
+padding-right:20px;
+padding-bottom:10px;
 height:40px;
 letter-spacing:-1px;
 }
 
 #menu li a:hover, #menu .active a {
-background:#391409;
-text-decoration:none;
+background:#771b0e;
+text-decoration:underline;
 }
 
 .content_bg {width:100%;height:404px;background:url(../images/bg_slider.jpg) 0 0 no-repeat;position:relative;overflow:hidden;box-shadow:0 0 5px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 5px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .4);margin-bottom:35px}
