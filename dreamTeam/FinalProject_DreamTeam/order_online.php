@@ -30,10 +30,11 @@
 					<h1><a href="index.html" id="logo">Cajun Restaurant</a></h1>
 					<nav>
 						<ul id="menu">
-							<li><a href="index.php"><img src="images/home_button.png" alt=""></a></li>
-							<li><a href="reservations.php"><img src="images/reservation_button.png" alt=""></a></li>
-							<li class="active"><a href="order_online.php"><img src="images/order_button.png" alt=""></a></li>
-							<li><a href="contact.php"><img src="images/contact_button.png" alt=""></a></li>
+							<li><a href="index.php"><p>Home</p></a></li>
+							<li><a href="order_online.php"><p>Menu</p></a></li>
+							<li><a href="reservations.php"><p>Make Reservation</p></a></li>
+							<li class="active"><a href="order_online.php"><p>Order Online</p></a></li>
+							<li><a href="contact.php"><p>Contact Us</p></a></li>
 						</ul>
 					</nav>
 				</header>
