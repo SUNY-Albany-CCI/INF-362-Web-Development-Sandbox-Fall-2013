@@ -50,7 +50,15 @@
 						<!-- The code ordering online goes here -->
 						<h2>MENU:</h2>
 						<br>
-						<h3>Appetizers</h3>
+						<h3>Appetizers:</h3>
+							<p>
+							
+							</p>
+						<h3>Salads:</h3>
+						<h3>Po' Boys:</h3>
+						<h3>Burgers:</h3>
+						<h3>Bowls</h3>
+						<h3>Plates</h3>
 						</div>
 						
 					</div>
