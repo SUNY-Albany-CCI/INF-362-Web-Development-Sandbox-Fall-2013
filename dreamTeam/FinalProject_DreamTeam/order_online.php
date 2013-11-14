@@ -45,8 +45,12 @@
 					<div class="content_bg">
 						
 						<div id="order_online">
+						
 						<!-- ORDER ONLINE -->
-						<!-- The code for ordering online goes here -->
+						<!-- The code ordering online goes here -->
+						<h2>MENU:</h2>
+						<br>
+						<h3>Appetizers</h3>
 						</div>
 						
 					</div>
