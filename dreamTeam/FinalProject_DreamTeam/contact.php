@@ -130,13 +130,6 @@
 	</div>
 </div>
 
-<div class="body3">
-	<div class="body4">
-		<div class="main">
-
-		</div>
-	</div>
-</div>
 <script type="text/javascript"> Cufon.now(); </script>
 </body>
 </html>
