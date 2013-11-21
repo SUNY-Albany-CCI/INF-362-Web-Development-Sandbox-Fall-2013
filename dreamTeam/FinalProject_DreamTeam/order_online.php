@@ -66,7 +66,7 @@ table#Appitizers td
 							<li><a href="order_online.php"><p>Menu</p></a></li>
 							<li><a href="reservations.php"><p>Make Reservation</p></a></li>
 							<li class="active"><a href="order_online.php"><p>Order Online</p></a></li>
-							<li><a href="contact.php"><p>Contact Us</p></a></li>
+							<li><a href="contact.php"><p>Contact us</p></a></li>
 						</ul>
 					</nav>
 				</header>
