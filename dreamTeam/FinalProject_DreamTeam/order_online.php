@@ -110,8 +110,8 @@ table#Appitizers td
 							<tr>
 								<td>Fried Catfish Bites</td>
 								<td>Lightly fried farm raised catfish with citrus remoulade</td>
-								<td></td>
-								<td></td>
+								<td>Price?</td>
+								<td>Order?</td>
 							</tr>
 							<tr>
 								<td></td>
