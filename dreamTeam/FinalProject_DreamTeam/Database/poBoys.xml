@@ -50,19 +50,19 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Fried Shrimp</Data></Cell>
-    <Cell><Data ss:Type="String">French bread sandwich with shredded cabbage, vinegared sun dried tomoatoes, carmelized onion, and dressed with cajun mustard and moyonnaise.  Served with fires, rice, or house house salad. </Data></Cell>
+    <Cell><Data ss:Type="String">French bread sandwich with shredded cabbage, vinegared sun dried tomatoes, caramelized onion, and dressed with cajun mustard and mayonnaise.  Served with fires, rice, or house house salad. </Data></Cell>
     <Cell ss:StyleID="s63"><Data ss:Type="Number">8.5</Data></Cell>
     <Cell ss:StyleID="s63"><Data ss:Type="Number">11</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Fried Catfish</Data></Cell>
-    <Cell ss:Formula="=R[-1]C"><Data ss:Type="String">French bread sandwich with shredded cabbage, vinegared sun dried tomoatoes, carmelized onion, and dressed with cajun mustard and moyonnaise.  Served with fires, rice, or house house salad. </Data></Cell>
+    <Cell ss:Formula="=R[-1]C"><Data ss:Type="String">French bread sandwich with shredded cabbage, vinegared sun dried tomatoes, caramelized onion, and dressed with cajun mustard and mayonnaise.  Served with fires, rice, or house house salad. </Data></Cell>
     <Cell ss:StyleID="s63"><Data ss:Type="Number">8.5</Data></Cell>
     <Cell ss:StyleID="s63"><Data ss:Type="Number">11</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">Suasage*</Data></Cell>
-    <Cell ss:Formula="=R[-1]C"><Data ss:Type="String">French bread sandwich with shredded cabbage, vinegared sun dried tomoatoes, carmelized onion, and dressed with cajun mustard and moyonnaise.  Served with fires, rice, or house house salad. </Data></Cell>
+    <Cell><Data ss:Type="String">Sausage*</Data></Cell>
+    <Cell ss:Formula="=R[-1]C"><Data ss:Type="String">French bread sandwich with shredded cabbage, vinegared sun dried tomatoes, caramelized onion, and dressed with cajun mustard and mayonnaise.  Served with fires, rice, or house house salad. </Data></Cell>
     <Cell ss:StyleID="s63"><Data ss:Type="Number">8</Data></Cell>
     <Cell ss:StyleID="s63"><Data ss:Type="Number">10.5</Data></Cell>
    </Row>

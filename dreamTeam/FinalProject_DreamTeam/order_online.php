@@ -17,6 +17,38 @@
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/atooltip.jquery.js"></script> 
 
+<script type="text/javascript" src="TacoComponents/TSWUtils.js"></script>
+<script type="text/javascript" src="TacoComponents/TSWDomUtils.js"></script>
+<script type="text/javascript" src="TacoComponents/TSWBrowserDetect.js"></script>
+<script type="text/javascript" src="TacoComponents/TSWTableUtils.js"></script>
+
+<!-- BEGIN COMPONENT Simple Table - Taco HTML Edit -->
+<style type="text/css">
+table#Appitizers
+{
+	width: 100%;
+	border: 1px solid #6c7aa9;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	*border-collapse: expression('collapse', cellSpacing = '0px'); /*For IE*/
+}
+table#Appitizers tbody tr
+{
+	background-color: #ffffff;
+	color: #000000;
+}
+table#Appitizers tbody tr.tswOddRow
+{
+	background-color: #edf3ff;
+}
+table#Appitizers td
+{
+	border: 1px solid #cccccc;
+	padding: 2px;
+}
+</style>
+
+<!-- END COMPONENT Simple Table - Taco HTML Edit -->
 </head>
 
 <body id="page1">
@@ -48,92 +80,56 @@
 						
 						<!-- ORDER ONLINE -->
 						<!-- The code ordering online goes here -->
-						<h2>MENU:</h2>
-						<br>
-						<h3>Appetizers:</h3>
-						<p>this needs to reference Database/appetizers.xml</p>
-						<h3>Salads:</h3>
-						<p>this needs to reference Database/salads.xml</p>
-						<h3>Po' Boys:</h3>
-						<p>this needs to reference Database/poBoys.xml</p>
-								<?php
-  								$data = array();
-  
-  								function add_menu( $PoBoy, $Desc, $price1, $price2 )
-  								{
-  								global $data;
-  
-  								$data []= array(
-  								"Po' Boys" => $PoBoy,
-  								'Description' => $Desc,
-  								'last' => $Price1,
-  								'email' => $Price2 
-  								);
-  								}
-  
-  								if ( $_FILES['file']['tmp_name'] )
-  								{
-  								$dom = DOMDocument::load( $_FILES['file']['tmp_name'] );
-  								$rows = $dom->getElementsByTagName( 'Row' );
-  								$first_row = true;
-  								foreach ($rows as $row)
-  								{
-  								if ( !$first_row )
-  								{
-  								$first = "";
-  								$middle = "";
-  								$last = "";
-  								$email = "";
-  
-  								$index = 1;
-  								$cells = $row->getElementsByTagName( 'Cell' );
-  								foreach( $cells as $cell )
-  								{ 
- 							 	$ind = $cell->getAttribute( 'Index' );
-  								if ( $ind != null ) $index = $ind;
-  
-  								if ( $index == 1 ) $first = $cell->nodeValue;
-  								if ( $index == 2 ) $middle = $cell->nodeValue;
-  								if ( $index == 3 ) $last = $cell->nodeValue;
-  								if ( $index == 4 ) $email = $cell->nodeValue;
-  
-  								$index += 1;
-  								}
-  								add_menu( $first, $middle, $last, $email );
-  								}
-  								$first_row = false;
-  								}
-  								}
-  								?>
-  								<html>
-  								<body>
-  								<table>
-  								<tr>
-  								<th>First</th>
-  								<th>Middle</th>
-  								<th>Last</th>
-  								<th>Email</th>
-  								</tr>
-  								<?php foreach( $data as $row ) { ?>
-  								<tr>
- 								<td><?php echo( $row['first'] ); ?></td>
- 								<td><?php echo( $row['middle'] ); ?></td>
-  								<td><?php echo( $row['last'] ); ?></td>
-  								<td><?php echo( $row['email'] ); ?></td>
-  								</tr>
-								</table>
-								</body>
-								</html>
-  								<?php } ?>
-						
-						<h3>Burgers:</h3>
-						<p>this needs to reference Database/burgers.xml</p>					
-						
-						<h3>Bowls</h3>
-						<p>this needs to reference Database/bowls.xml</p>
-						
-						<h3>Plates</h3>
-						<p>this needs to reference Database/plates.xml</p>
+					<h2>Appetizers</h2>
+					<table id="Appitizers" class="tswTable">
+						<tbody>
+							<tr>
+								<td>French Fries</td>
+								<td>House cut fires with cajun ketchup and Tabasco mayonnaise</td>
+								<td>price?</td>
+								<td>order?</td>
+							</tr>
+							<tr>
+								<td>Boudin Balls</td>
+								<td>Pork and rice dressing breaded and frie with black pepper and green onion mayonaise</td>
+								<td>price?</td>
+								<td>order?</td>
+							</tr>
+							<tr>
+								<td>Boucherie Plate</td>
+								<td>House cured bacon and suasage with creole mustard and grilled apples.</td>
+								<td>Price?</td>
+								<td>Order?</td>
+							</tr>
+							<tr>
+								<td>Shrimp Skewers</td>
+								<td>Gulf shrimp skewered and grilled in house seasoning</td>
+								<td>Price?</td>
+								<td>Order?</td>
+							</tr>
+							<tr>
+								<td>Fried Catfish Bites</td>
+								<td>Lightly fried farm raised catfish with citrus remoulade</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+					
+					
+						</table>
 						</div>
 						
 					</div>
