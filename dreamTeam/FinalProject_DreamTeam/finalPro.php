@@ -27,7 +27,7 @@
 			
 <!-- header -->
 				<header>
-					<h1><a href="index.html" id="logo">Cajun Restaurant</a></h1>
+					<h1><a href="index.php" id="logo">Cajun Restaurant</a></h1>
 					<nav>
 						<ul id="menu">
 							<li><a href="index.php"><p>Home</p></a></li>
