@@ -95,7 +95,7 @@
 						<section class="cols">
 							<div class="box">
 								<div>
-									<h2>Order <span>Online</span></h2>
+									<h2>Order Online</h2>
 									<figure><img src="images/page1_img1.jpg" alt="" ></figure>
 									<p class="pad_bot1">Click here to see our menu and to make an order online. We offer both delivery and pick-up.</p>
 									<a href="order_online.php" class="button1">View Menu</a>
@@ -105,7 +105,7 @@
 						<section class="cols pad_left1">
 							<div class="box">
 								<div>
-									<h2>Make <span>Reservation</span></h2>
+									<h2>Make Reservation</h2>
 									<figure><img src="images/page1_img2.jpg" alt="" ></figure>
 									<p class="pad_bot1">Click here to make a reservation for our restaurant which is located in downtown Albany. We are looking forward to seeing you.</p>
 									<a href="reservations.php" class="button1">View Calender</a>
@@ -115,7 +115,7 @@
 						<section class="cols pad_left1">
 							<div class="box">
 								<div>
-									<h2>Contact <span>Us</span></h2>
+									<h2>Contact Us</h2>
 									<figure><img src="images/page1_img3.jpg" alt="" ></figure>
 									<p>Do you have any questions or comments for us? Please let us know! We love getting feedback.</p>
 									<a href="contact.php" class="button1">Contact Form</a>
@@ -125,33 +125,6 @@
 					</div>
 				</article>
 			</div>
-		</div>
-	</div>
-</div>
-
-<div class="body3">
-	<div class="body4">
-		<div class="main">
-<!-- footer -->
-			<footer>
-				<div class="wrapper">
-					<section class="col1 pad_left1">
-						<h3>Toll Free: <span>1-800 123 45 67</span></h3>
-					</section>
-					<section class="col2 pad_left1">
-						<h3>Follow Us </h3>
-						<ul id="icons">
-							<li><a href="#" class="normaltip" title="Facebook"><img src="images/icon1.gif" alt=""></a></li>
-							<li><a href="#" class="normaltip" title="Linkedin"><img src="images/icon2.gif" alt=""></a></li>
-							<li><a href="#" class="normaltip" title="Twitter"><img src="images/icon3.gif" alt=""></a></li>
-							<li><a href="#" class="normaltip" title="Delicious"><img src="images/icon4.gif" alt=""></a></li>
-							<li><a href="#" class="normaltip" title="Technorati"><img src="images/icon5.gif" alt=""></a></li>
-						</ul>
-					</section>
-				</div>
-				<!-- {%FOOTER_LINK} -->
-			</footer>
-<!-- / footer -->
 		</div>
 	</div>
 </div>
