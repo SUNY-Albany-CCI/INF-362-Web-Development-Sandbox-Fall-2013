@@ -163,8 +163,13 @@ text-decoration:underline;
 .list1 li a {font-style:italic;padding-left:12px;background:url(../images/marker_1.gif) 1px 8px no-repeat;color:#faf3ed}
 .list_1 {color:#fff}
 .list_1:hover {text-decoration:none}
-.button1 {display:inline-block;font-size:20px;color:#771b0e;line-height:34px;padding:0 15px;background:#faf3ed;letter-spacing:-1px}
-.button1:hover {text-decoration:none;color:#1e0000;background:#faf3ed}
+.button1 {display:inline-block;font-size:20px;color:#faf3ed;line-height:34px;padding:0 15px;background:#771b0e;letter-spacing:-1px}
+.button1:hover {text-decoration:none;color:#771b0e;background:#faf3ed}
+
+.button2 {display:inline-block;font-size:20px;color:#771b0e;line-height:34px;padding:0 15px;background:#faf3ed;letter-spacing:-1px}
+.button2:hover {text-decoration:none;color:#faf3ed;background:#771b0e}
+
+
 .line1 {background:url(../images/line_vert1.gif) 285px 0 repeat-y}
 .line2 {background:url(../images/line_vert1.gif) 615px 0 repeat-y}
 .price {margin-top:-7px}

@@ -41,11 +41,10 @@
 					<h1><a href="index.php" id="logo">Cajun Restaurant</a></h1>
 					<nav>
 						<ul id="menu">
-							<li class="active"><a href="index.php"><p>Home</p></a></li>
-							<li><a href="order_online.php"><p>Menu</p></a></li>
-							<li><a href="reservations.php"><p>Make Reservation</p></a></li>
-							<li><a href="order_online.php"><p>Order Online</p></a></li>
-							<li><a href="contact.php"><p>Contact us</p></a></li>
+							<li class="active"><a href="index.php"><p> Home </p></a></li>
+							<li><a href="reservations.php"><p> Make Reservation </p></a></li>
+							<li><a href="order_online.php"><p>Menu / Order Online</p></a></li>
+							<li><a href="contact.php"><p> Contact us </p></a></li>
 						</ul>
 					</nav>
 				</header>
@@ -98,7 +97,7 @@
 									<h2>Order Online</h2>
 									<figure><img src="images/page1_img1.jpg" alt="" ></figure>
 									<p class="pad_bot1">Click here to see our menu and to make an order online. We offer both delivery and pick-up.</p>
-									<a href="order_online.php" class="button1">View Menu</a>
+									<a href="order_online.php" class="button2">View Menu</a>
 								</div>
 							</div>
 						</section>
@@ -108,7 +107,7 @@
 									<h2>Make Reservation</h2>
 									<figure><img src="images/page1_img2.jpg" alt="" ></figure>
 									<p class="pad_bot1">Click here to make a reservation for our restaurant which is located in downtown Albany. We are looking forward to seeing you.</p>
-									<a href="reservations.php" class="button1">View Calender</a>
+									<a href="reservations.php" class="button2">Reserve your table</a>
 								</div>
 							</div>
 						</section>
@@ -118,7 +117,7 @@
 									<h2>Contact Us</h2>
 									<figure><img src="images/page1_img3.jpg" alt="" ></figure>
 									<p>Do you have any questions or comments for us? Please let us know! We love getting feedback.</p>
-									<a href="contact.php" class="button1">Contact Form</a>
+									<a href="contact.php" class="button2">Contact Form</a>
 								</div>
 							</div>
 						</section>
