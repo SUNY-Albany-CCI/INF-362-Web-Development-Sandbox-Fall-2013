@@ -71,8 +71,10 @@
 <body>
 <div id="reservationContent">
 <h1 id="reservationsHeading">Make Reservation</h1>
+
 <br />
 <br />
+<div id="contactForm">
 <form action="finalPro.php" method="post">
 
 <table id="reservationInput" align="center">

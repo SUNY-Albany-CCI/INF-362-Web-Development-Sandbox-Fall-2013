@@ -208,10 +208,14 @@ width:200px;
 }
 
 #date {
-width:100px;
+width:130px;
 }
 
 #confirmation {
+padding-left:40px;
+}
+
+#contactForm {
 padding-left:40px;
 }
 
