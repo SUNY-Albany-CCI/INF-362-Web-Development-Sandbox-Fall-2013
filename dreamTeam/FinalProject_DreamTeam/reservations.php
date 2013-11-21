@@ -69,12 +69,13 @@
 
 
 <body>
-<h1>Make Reservation</h1>
+<div id="reservationContent">
+<h1 id="reservationsHeading">Make Reservation</h1>
 <br />
 <br />
 <form action="finalPro.php" method="post">
 
-<table align="center">
+<table id="reservationInput" align="center">
 <tr>
 <td>First Name: <input title="Enter your first name" type="text" name="fName" size="30" placeholder="First" required /></td>
 </tr>
@@ -82,13 +83,12 @@
 <tr>
 <td>Last Name: <input title="Enter your last name" type="text" name="lName" size="30" placeholder="Last" required/></td>
 </tr>
-
 <tr>
-<td>Phone: <input title="Enter your phone number" type="tel" name="Phone" size="12" placeholder="(000)555-5555" required/></td>
+<td>Phone: <input id="phone" title="Enter your phone number" type="tel" name="Phone" size="12" placeholder="(000)555-5555" required/></td>
 </tr>
 
 <tr>
-<td>Email: <input title="Enter your email" type="email" name="Email" size="20" placeholder="johndoe@email.com" required/></td>
+<td>Email: <input id="email" title="Enter your email" type="email" name="Email" size="20" placeholder="johndoe@email.com" required/></td>
 </tr>
 
 <tr>
@@ -114,7 +114,7 @@
 </tr>
 
 <tr>
-<td>Date: <input title="Select a date" id="date" type="date" name="Date" size="10" placeholder="YYYY-MM-DD" required/></td>
+<td>Date: <input id="date" title="Select a date" id="date" type="date" name="Date" size="10" placeholder="YYYY-MM-DD" required/></td>
 </tr>
 
 <tr>
@@ -145,9 +145,9 @@
 
 <br/>
 
-<input type="submit" value="Reserve"/>
+<input class="button1" type="submit" value="Reserve"/>
 </form>
-
+</div>
 </body>
 
 </html>

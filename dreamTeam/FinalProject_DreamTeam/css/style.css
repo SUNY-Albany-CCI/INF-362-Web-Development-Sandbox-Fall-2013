@@ -12,7 +12,7 @@ mark, rp, rt, ruby, summary, time {display:inline}
 body {
 background:url(../images/bg_bot.jpg) center 0 repeat #faf3ed;
 border:0;
-font:14px, Helvetica, sans-serif;
+font:14px Georgia, "Times New Roman", Times, serif;
 color:#200;
 line-height:24px
 }
@@ -132,7 +132,7 @@ background:#771b0e;
 text-decoration:underline;
 }
 
-.content_bg {width:100%;height:404px;background:url(../images/bg_slider.jpg) 0 0 no-repeat;position:relative;overflow:hidden;box-shadow:0 0 5px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 5px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .4);margin-bottom:35px}
+.content_bg {width:100%;height:600px;background:url(../images/bg_slider.jpg) 0 0 repeat;position:relative;overflow:hidden;box-shadow:0 0 5px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 5px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .4);margin-bottom:35px}
 
 .slider_bg {width:100%;height:404px;background:url(../images/bg_slider.jpg) 0 0 no-repeat;position:relative;overflow:hidden;box-shadow:0 0 5px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 5px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .4);margin-bottom:35px}
 .slider {top:10px;right:10px;position:absolute;z-index:1;width:920px}
@@ -197,3 +197,40 @@ footer a:hover {text-decoration:none}
 #ContactForm a {margin-left:20px;float:right}
 #ContactForm .input {width:399px;height:18px;background:#faf3ed;padding:1px 5px;color:#220000;font:14px Georgia, "Times New Roman", Times, serif;margin:0;float:left}
 #ContactForm textarea {overflow:auto;width:789px;height:163px;background:#faf3ed;padding:1px 5px;color:#220000;font:14px Georgia, "Times New Roman", Times, serif;margin:0}
+
+#reservationsHeading {
+font-size:40px;
+padding-bottom:35px;
+color:#771b0e;
+}
+
+#reservationContent {
+padding-left:40px;
+width:500px;
+padding-top:40px;
+}
+
+#reservationInput {
+font-size:18px;
+}
+
+#reservationInput td {
+padding-bottom:15px;
+}
+
+#phone {
+width:100px;
+}
+
+#email {
+width:200px;
+}
+
+#date {
+width:100px;
+}
+
+
+
+
+
