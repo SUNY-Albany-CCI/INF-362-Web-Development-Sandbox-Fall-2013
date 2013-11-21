@@ -51,14 +51,89 @@
 						<h2>MENU:</h2>
 						<br>
 						<h3>Appetizers:</h3>
-							<p>
-							this is a line of text
-							</p>
+						<p>this needs to reference Database/appetizers.xml</p>
 						<h3>Salads:</h3>
+						<p>this needs to reference Database/salads.xml</p>
 						<h3>Po' Boys:</h3>
+						<p>this needs to reference Database/poBoys.xml</p>
+								<?php
+  								$data = array();
+  
+  								function add_menu( $PoBoy, $Desc, $price1, $price2 )
+  								{
+  								global $data;
+  
+  								$data []= array(
+  								"Po' Boys" => $PoBoy,
+  								'Description' => $Desc,
+  								'last' => $Price1,
+  								'email' => $Price2 
+  								);
+  								}
+  
+  								if ( $_FILES['file']['tmp_name'] )
+  								{
+  								$dom = DOMDocument::load( $_FILES['file']['tmp_name'] );
+  								$rows = $dom->getElementsByTagName( 'Row' );
+  								$first_row = true;
+  								foreach ($rows as $row)
+  								{
+  								if ( !$first_row )
+  								{
+  								$first = "";
+  								$middle = "";
+  								$last = "";
+  								$email = "";
+  
+  								$index = 1;
+  								$cells = $row->getElementsByTagName( 'Cell' );
+  								foreach( $cells as $cell )
+  								{ 
+ 							 	$ind = $cell->getAttribute( 'Index' );
+  								if ( $ind != null ) $index = $ind;
+  
+  								if ( $index == 1 ) $first = $cell->nodeValue;
+  								if ( $index == 2 ) $middle = $cell->nodeValue;
+  								if ( $index == 3 ) $last = $cell->nodeValue;
+  								if ( $index == 4 ) $email = $cell->nodeValue;
+  
+  								$index += 1;
+  								}
+  								add_menu( $first, $middle, $last, $email );
+  								}
+  								$first_row = false;
+  								}
+  								}
+  								?>
+  								<html>
+  								<body>
+  								<table>
+  								<tr>
+  								<th>First</th>
+  								<th>Middle</th>
+  								<th>Last</th>
+  								<th>Email</th>
+  								</tr>
+  								<?php foreach( $data as $row ) { ?>
+  								<tr>
+ 								<td><?php echo( $row['first'] ); ?></td>
+ 								<td><?php echo( $row['middle'] ); ?></td>
+  								<td><?php echo( $row['last'] ); ?></td>
+  								<td><?php echo( $row['email'] ); ?></td>
+  								</tr>
+								</table>
+								</body>
+								</html>
+  								<?php } ?>
+						
 						<h3>Burgers:</h3>
+						<p>this needs to reference Database/burgers.xml</p>					
+						
 						<h3>Bowls</h3>
+						<p>this needs to reference Database/bowls.xml</p>
+						
 						<h3>Plates</h3>
+						<p>this needs to reference Database/plates.xml</p>
 						</div>
 						
 					</div>
@@ -79,7 +154,7 @@
 			<footer>
 				<div class="wrapper">
 					<section class="col1 pad_left1">
-						<h3>Toll Free: <span>1-800 123 45 67</span></h3>
+						<h3>Phone: <span>1-800-555-1234</span></h3>
 					</section>
 					<section class="col2 pad_left1">
 						<h3>Follow Us </h3>
