@@ -27,14 +27,13 @@
 			
 <!-- header -->
 				<header>
-					<h1><a href="index.html" id="logo">Cajun Restaurant</a></h1>
+					<h1><a href="index.php" id="logo">Cajun Restaurant</a></h1>
 					<nav>
 						<ul id="menu">
-							<li><a href="index.php"><p>Home</p></a></li>
-							<li><a href="order_online.php"><p>Menu</p></a></li>
-							<li class="active"><a href="reservations.php"><p>Make Reservation</p></a></li>
-							<li><a href="order_online.php"><p>Order Online</p></a></li>
-							<li><a href="contact.php"><p>Contact us</p></a></li>
+							<li><a href="index.php"><p> Home </p></a></li>
+							<li class="active"><a href="reservations.php"><p> Make Reservation </p></a></li>
+							<li><a href="order_online.php"><p>Menu / Order Online</p></a></li>
+							<li><a href="contact.php"><p> Contact us </p></a></li>
 						</ul>
 					</nav>
 				</header>
@@ -71,8 +70,10 @@
 <body>
 <div id="reservationContent">
 <h1 id="reservationsHeading">Make Reservation</h1>
+
 <br />
 <br />
+<div id="contactForm">
 <form action="finalPro.php" method="post">
 
 <table id="reservationInput" align="center">
@@ -174,33 +175,7 @@
 	</div>
 </div>
 
-<div class="body3">
-	<div class="body4">
-		<div class="main">
-		
-<!-- footer -->
-			<footer>
-				<div class="wrapper">
-					<section class="col1 pad_left1">
-						<h3>Toll Free: <span>1-800 123 45 67</span></h3>
-					</section>
-					<section class="col2 pad_left1">
-						<h3>Follow Us </h3>
-						<ul id="icons">
-							<li><a href="#" class="normaltip" title="Facebook"><img src="images/icon1.gif" alt=""></a></li>
-							<li><a href="#" class="normaltip" title="Linkedin"><img src="images/icon2.gif" alt=""></a></li>
-							<li><a href="#" class="normaltip" title="Twitter"><img src="images/icon3.gif" alt=""></a></li>
-							<li><a href="#" class="normaltip" title="Delicious"><img src="images/icon4.gif" alt=""></a></li>
-							<li><a href="#" class="normaltip" title="Technorati"><img src="images/icon5.gif" alt=""></a></li>
-						</ul>
-					</section>
-				</div>
-			</footer>
-<!-- / footer -->
 
-		</div>
-	</div>
-</div>
 <script type="text/javascript"> Cufon.now(); </script>
 </body>
 </html>
