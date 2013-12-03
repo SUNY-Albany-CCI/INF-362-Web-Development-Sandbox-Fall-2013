@@ -1,3 +1,14 @@
+<?php
+	include("includes/db.php");
+	include("includes/functions.php");
+	session_start();
+	if(isset($_REQUEST['command']) && $_REQUEST['command']=='add' && $_REQUEST['productid']>0){
+		$pid=$_REQUEST['productid'];
+		addtocart($pid,1);
+		header("location:shoppingcart.php");
+		exit();
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +17,13 @@
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript">
+	function addtocart(pid){
+		document.form1.productid.value=pid;
+		document.form1.command.value='add';
+		document.form1.submit();
+	}
+</script>
 
 <script type="text/javascript" src="js/jquery-1.6.js" ></script>
 <script type="text/javascript" src="js/cufon-yui.js"></script>
@@ -17,41 +35,14 @@
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/atooltip.jquery.js"></script> 
 
-<script type="text/javascript" src="TacoComponents/TSWUtils.js"></script>
-<script type="text/javascript" src="TacoComponents/TSWDomUtils.js"></script>
-<script type="text/javascript" src="TacoComponents/TSWBrowserDetect.js"></script>
-<script type="text/javascript" src="TacoComponents/TSWTableUtils.js"></script>
-
-<!-- BEGIN COMPONENT Simple Table - Taco HTML Edit -->
-<style type="text/css">
-table#Appitizers
-{
-	width: 100%;
-	border: 1px solid #6c7aa9;
-	border-collapse: collapse;
-	border-spacing: 0px;
-	*border-collapse: expression('collapse', cellSpacing = '0px'); /*For IE*/
-}
-table#Appitizers tbody tr
-{
-	background-color: #ffffff;
-	color: #000000;
-}
-table#Appitizers tbody tr.tswOddRow
-{
-	background-color: #edf3ff;
-}
-table#Appitizers td
-{
-	border: 1px solid #cccccc;
-	padding: 2px;
-}
-</style>
-
-<!-- END COMPONENT Simple Table - Taco HTML Edit -->
 </head>
 
 <body id="page1">
+<form name="form1">
+	<input type="hidden" name="productid" />
+	<input type="hidden" name="command" />
+</form>
+
 <div class="body6">
 	<div class="body1">
 		<div class="body5">
@@ -75,61 +66,27 @@ table#Appitizers td
 				<article id="content">
 					<div class="content_bg">
 						
-						<div id="order_online">
+						<div id="reservationContent">
+
+						<h1 align="center" id="reservationsHeading">Menu</h1>
 						
-						<!-- ORDER ONLINE -->
-						<!-- The code ordering online goes here -->
-					<h2>Appetizers</h2>
-					<table id="Appitizers" class="tswTable">
-						<tbody>
-							<tr>
-								<td>French Fries</td>
-								<td>House cut fires with cajun ketchup and Tabasco mayonnaise</td>
-								<td>price?</td>
-								<td>order?</td>
-							</tr>
-							<tr>
-								<td>Boudin Balls</td>
-								<td>Pork and rice dressing breaded and frie with black pepper and green onion mayonaise</td>
-								<td>price?</td>
-								<td>order?</td>
-							</tr>
-							<tr>
-								<td>Boucherie Plate</td>
-								<td>House cured bacon and suasage with creole mustard and grilled apples.</td>
-								<td>Price?</td>
-								<td>Order?</td>
-							</tr>
-							<tr>
-								<td>Shrimp Skewers</td>
-								<td>Gulf shrimp skewered and grilled in house seasoning</td>
-								<td>Price?</td>
-								<td>Order?</td>
-							</tr>
-							<tr>
-								<td>Fried Catfish Bites</td>
-								<td>Lightly fried farm raised catfish with citrus remoulade</td>
-								<td>Price?</td>
-								<td>Order?</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-						</tbody>
+						<br />
+						<table id="menuTable" cellpadding="2px" width="600px">
+							<?php
+								$result=mysql_query("select * from menu");
+								while($row=mysql_fetch_array($result)){
+							?>
+						<tr>
+								<td>	<b><?php echo $row['name']?></b></td>
+									   		<td><?php echo $row['description']?></td>
+												<td>Price:<big style="color:green">
+												$<?php echo $row['price']?></big></td>
+												<td><input type="button" value="Add to Cart" onclick="addtocart(<?php echo $row['serial']?>)" />
+								</td>
+						</tr>
+						<tr><td colspan=2><hr size="1" /></td>
+						<? } ?>
 					</table>
-					
-					
-						</table>
-						</div>
 						
 					</div>
 					<div class="wrap">

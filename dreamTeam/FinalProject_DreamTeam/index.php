@@ -17,18 +17,6 @@
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/atooltip.jquery.js"></script> 
 
-<!--[if lt IE 9]>
-	<script type="text/javascript" src="js/html5.js"></script>
-	<style type="text/css">
-		.slider_bg {behavior:url(js/PIE.htc)}
-	</style>
-<![endif]-->
-<!--[if lt IE 7]>
-	<div style='clear:both;text-align:center;position:relative'>
-		<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
-	</div>
-<![endif]-->
-
 </head>
 
 <body id="page1">
@@ -55,7 +43,7 @@
 						<div class="slider">
 							<ul class="items">
 								<li>
-									<img src="images/img1.jpg" alt="">
+									<img src="images/img1-1.jpg" alt="">
 									<div class="banner">
 										<strong>Pan Seared<span>Pork Loin</span></strong>
 										<b></b>
@@ -63,11 +51,11 @@
 											<span>Organically raised local pork loin<br>
 											served with caramelized pear and and fennel compote</span>
 										</p>
-										<a href="#" class="comboButton">Order now</a>
+										<a href="order_online.php" class="comboButton">Order now</a>
 									</div>
 								</li>
 								<li>
-									<img src="images/img2.jpg" alt="">
+									<img src="images/img2-2.jpg" alt="">
 									<div class="banner">
 										<strong>Kegs &<span>Casks</span></strong>
 										<b>Local druaghts</b>
@@ -77,7 +65,7 @@
 									</div>
 								</li>
 								<li>
-									<img src="images/img3.jpg" alt="">
+									<img src="images/img3-3.jpg" alt="">
 									<div class="banner">
 										<strong>Belgian<span>Waffles</span></strong>
 										<b>Desert of the month</b>
