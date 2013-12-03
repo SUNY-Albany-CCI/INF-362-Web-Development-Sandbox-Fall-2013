@@ -19,14 +19,12 @@
 
 </head>
 
-<body id="page1">
-<div class="body6">
-	<div class="body1">
-		<div class="body5">
+<body>
+<div class="body">
 			<div class="main">
 <!-- header -->
 				<header>
-					<h1><a href="index.php" id="logo">Cajun Restaurant</a></h1>
+					<h1><a href="index.php" id="logo">Ahnvee</a></h1>
 					<nav>
 						<ul id="menu">
 							<li class="active"><a href="index.php"><p> Home </p></a></li>
@@ -39,7 +37,7 @@
 <!-- / header -->
 <!-- content -->
 				<article id="content">
-					<div class="slider_bg">
+					<div class="slideshow">
 						<div class="slider">
 							<ul class="items">
 								<li>
@@ -49,7 +47,7 @@
 										<b></b>
 										<p>
 											<span>Organically raised local pork loin<br>
-											served with caramelized pear and and fennel compote</span>
+											served with caramelized pear and fennel compote.</span>
 										</p>
 										<a href="order_online.php" class="comboButton">Order now</a>
 									</div>
@@ -58,9 +56,9 @@
 									<img src="images/img2-2.jpg" alt="">
 									<div class="banner">
 										<strong>Kegs &<span>Casks</span></strong>
-										<b>Local druaghts</b>
+										<b>Local draughts</b>
 										<p>
-											<span>Try one of our <br> constantly rotating draughts. <br>Selections rotate<br>seasonaly.</span>
+											<span>Try one of our <br> constantly rotating draughts. <br>Selections rotate seasonally.</span>
 										</p>
 									</div>
 								</li>
@@ -70,8 +68,8 @@
 										<strong>Belgian<span>Waffles</span></strong>
 										<b>Desert of the month</b>
 										<p>
-											<span>Smothered in the best local berries <br>
-											We work with local farms and growers to source the best fruits to cover our secret-recipe waffles</span>
+											<span>Smothered in the best local berries.<br>
+											We work with local farms and growers to source the best fruits to cover our secret-recipe waffles.</span>
 										</p>
 									</div>
 								</li>
@@ -112,9 +110,7 @@
 					</div>
 				</article>
 			</div>
-		</div>
-	</div>
 </div>
-<script type="text/javascript"> Cufon.now(); </script>
+
 </body>
 </html>

@@ -35,14 +35,7 @@
 		if($pid<1 or $q<1) return;
 		
 		if(is_array($_SESSION['cart'])){
-			if(product_exists($pid)) {
-			$max=count($_SESSION['cart']);
-		    for($i=0;$i<$max;$i++){
-			$pid=$_SESSION['cart'][$i]['productid'];
-			$_SESSION['cart'][$i]['qty']=($q+1);
-			break;
-			}
-			}
+			if(product_exists($pid)) return;
 			$max=count($_SESSION['cart']);
 			$_SESSION['cart'][$max]['productid']=$pid;
 			$_SESSION['cart'][$max]['qty']=$q;

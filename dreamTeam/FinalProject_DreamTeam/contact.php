@@ -19,15 +19,12 @@
 
 </head>
 
-<body id="page1">
-<div class="body6">
-	<div class="body1">
-		<div class="body5">
+<body>
+<div class="body">
 			<div class="main">
-			
 <!-- header -->
 				<header>
-					<h1><a href="index.php" id="logo">Cajun Restaurant</a></h1>
+					<h1><a href="index.php" id="logo">Ahnvee</a></h1>
 					<nav>
 						<ul id="menu">
 							<li><a href="index.php"><p> Home </p></a></li>
@@ -42,94 +39,45 @@
 <!-- content -->
 				<article id="content">
 					<div class="content_bg">
-						
-<div id="make_reservation">
+						<div id="mainContent">
+							<h1 id="mainHeading">Contact us</h1>
+								<br />
+								<br />
+								<div id="inputForm">
+									<form action="contactPost" method="post">
 
-						<!-- RESERVATIONS -->
-					
-					
-					
-					
-					
-					
-					
-					
-					
-												
-<!DOCTYPE html>
+										<table id="reservationInput" align="center">
+											<tr>
+												<td>First Name: <input title="Enter your first name" type="text" name="fName" size="30" placeholder="First" required /></td>
+											</tr>
 
-<html>
-<!-- <link rel="stylesheet" href="finalPro.css" type="text/css"> -->
-<head>
-<script type="text/javascript" src="finalPro.js"></script>
-<title>Reservations</title>
-</head>
+											<tr>
+												<td>Last Name: <input title="Enter your last name" type="text" name="lName" size="30" placeholder="Last" required/></td>
+											</tr>
 
+											<tr>
+												<td>Phone: <input title="Enter your phone number" type="tel" name="Phone" size="12" placeholder="(000)555-5555" required/></td>
+											</tr>
 
+											<tr>
+												<td>Email: <input title="Enter your email" type="email" name="Email" size="20" placeholder="johndoe@email.com" required/></td>
+											</tr>
 
-<body>
-<div id="reservationContent">
-<h1 id="reservationsHeading">Contact us</h1>
+											<tr>
+												<td><textarea rows="4" cols="50" type="text" name="Comment" placeholder="Enter text here"></textarea></td>
+											</tr>
 
-<br />
-<br />
-<div id="contactForm">
-<form action="contactPost" method="post">
-
-<table id="reservationInput" align="center">
-<tr>
-<td>First Name: <input title="Enter your first name" type="text" name="fName" size="30" placeholder="First" required /></td>
-</tr>
-
-<tr>
-<td>Last Name: <input title="Enter your last name" type="text" name="lName" size="30" placeholder="Last" required/></td>
-</tr>
-
-<tr>
-<td>Phone: <input title="Enter your phone number" type="tel" name="Phone" size="12" placeholder="(000)555-5555" required/></td>
-</tr>
-
-<tr>
-<td>Email: <input title="Enter your email" type="email" name="Email" size="20" placeholder="johndoe@email.com" required/></td>
-</tr>
-
-<tr>
-<td><textarea rows="4" cols="50" type="text" name="Comment" placeholder="Enter text here"></textarea></td>
-</tr>
-
-<tr>
-<td><input class="button1" type="submit" value="Send"/></td>
-</tr>
-</form>
-</div>
-</div>
-</body>
-
-</html>
-							
-							
-							
-							
-							
-							
-							
-							
-													
-						<!-- The code for making reservations goes here -->
-						
-						</div>
-						
-					</div>
-					<div class="wrap">
-						
-					</div>
-				</article>
+											<tr>
+												<td><input class="button1" type="submit" value="Send"/></td>
+											</tr>
+			</form>
+		
+				</div>
 			</div>
-		</div>
+		</article>
 	</div>
 </div>
 
-<script type="text/javascript"> Cufon.now(); </script>
 </body>
 </html>
 

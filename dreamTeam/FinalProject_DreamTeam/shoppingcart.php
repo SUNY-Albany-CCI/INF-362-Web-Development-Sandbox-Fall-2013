@@ -17,12 +17,12 @@
 				$_SESSION['cart'][$i]['qty']=$q;
 			}
 			else{
-				$msg='Some products not updated!, quantity must be a number between 1 and 999';
+				$msg='Your order was not updated!, The quantity must be a number between 1 and 999';
 			}
 		}
 	}
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -44,14 +44,14 @@
 
 <script language="javascript">
 	function del(pid){
-		if(confirm('Do you really mean to delete this item')){
+		if(confirm('Do you really mean to delete this item?')){
 			document.form1.pid.value=pid;
 			document.form1.command.value='delete';
 			document.form1.submit();
 		}
 	}
 	function clear_cart(){
-		if(confirm('This will empty your shopping cart, continue?')){
+		if(confirm('This will empty your order, continue?')){
 			document.form1.command.value='clear';
 			document.form1.submit();
 		}
@@ -63,41 +63,38 @@
 
 
 </script>
-	</head>
-	<body id="page1">
+
+</head>
+	<body>
 		<form name="form1" method="post">
 			<input type="hidden" name="pid" />
 			<input type="hidden" name="command" />
-			<div class="body6">
-				<div class="body1">
-					<div class="body5">
-						<div class="main">
-			
+			<div class="body">
+				<div class="main">
 <!-- header -->
-							<header>
-								<h1><a href="index.php" id="logo">Cajun Restaurant</a></h1>
-								<nav>
-									<ul id="menu">
-										<li><a href="index.php"><p> Home </p></a></li>
-										<li><a href="reservations.php"><p> Make Reservation </p></a></li>
-										<li class="active"><a href="order_online.php"><p>Menu / Order Online</p></a></li>
-										<li><a href="contact.php"><p> Contact us </p></a></li>
-									</ul>
-								</nav>
-							</header>
+					<header>
+						<h1><a href="index.php" id="logo">Cajun Restaurant</a></h1>
+							<nav>
+								<ul id="menu">
+									<li><a href="index.php"><p> Home </p></a></li>
+									<li><a href="reservations.php"><p> Make Reservation </p></a></li>		
+									<li class="active"><a href="order_online.php"><p>Menu / Order Online</p></a></li>
+					     			<li><a href="contact.php"><p> Contact us </p></a></li>
+								</ul>
+							</nav>
+					</header>
 <!-- / header -->
 
 <!-- content -->
-							<article id="content">
-								<div class="content_bg">
-									<div id="order_online">
-										<div style="margin:0px auto; width:600px;" >
-											<div id="reservationContent" style="padding-bottom:10px">
-												<h1 id="reservationsHeading">Your Shopping Cart</h1>
-												<input type="button" class="button1" value="Continue Shopping" onclick="window.location='order_online.php'" />
-											</div>
-											<div style="color:#F00"><?=$msg?></div>
+					<article id="content">
+						<div class="content_bg">
+							<div>
+								<div width:600px>
+									<div id="mainContent">
+										<h1 id="mainHeading">Your Order</h1><br /><br />
+											<input type="button" class="button1" value="Order more food" onclick="window.location='order_online.php'" />		<div style="color:#F00"><?=$msg?></div>
 											<table border="0" cellpadding="5px" cellspacing="1px" style="font-family:Verdana, Geneva, sans-serif; font-size:11px;" width="100%">
+											
     	<?php
 			if(is_array($_SESSION['cart'])){
             	echo '<tr bgcolor="#FFFFFF" style="font-weight:bold"><td>Name</td><td>Price</td><td>Qty</td><td>Amount</td><td>Options</td></tr>';
@@ -107,7 +104,7 @@
 					$q=$_SESSION['cart'][$i]['qty'];
 					$pname=get_product_name($pid);
 					if($q==0) continue;
-			?>
+		?>
 												<tr bgcolor="#FFFFFF">
 													<td><?=$pname?></td>
 													<td>$ <?=get_price($pid)?></td>
@@ -121,31 +118,24 @@
 												<tr>
 													<td><b>Order Total: $<?=get_order_total()?></b></td>
 													<td colspan="5" align="right">
-														<input type="button" value="Clear Cart" onclick="clear_cart()">
-														<input type="button" value="Update Cart" onclick="update_cart()">
-														<input type="button" value="Place Order" onclick="window.location='billing.php'">
+														<input type="button" value="Clear Order" onclick="clear_cart()">
+														<input type="button" value="Update Order" onclick="update_cart()">
+														<input type="button" value="Place Order" onclick="">
 													</td>
 												</tr>
 			<?php
             }
 			else{
-				echo "<tr bgColor='#FFFFFF'><td>There are no items in your shopping cart!</td>";
+				echo "<tr bgColor='#FFFFFF'><td>Your order is empty!</td>";
 			}
 		?>
 											</table>
 										</div>
-		</form>
-		</div>
-		<div class="wrap">
-		</div>
-		</article>
-		</div>
-		</div>
-		</div>
-		</div>
-
-
-<script type="text/javascript"> Cufon.now(); </script>
+									</div>
+								</div>
+						</article>
+					</div>
+			</div>
 		</form>
 	</body>
 </html>

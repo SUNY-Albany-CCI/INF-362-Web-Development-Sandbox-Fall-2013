@@ -19,15 +19,12 @@
 
 </head>
 
-<body id="page1">
-<div class="body6">
-	<div class="body1">
-		<div class="body5">
+<body>
+<div class="body">
 			<div class="main">
-			
 <!-- header -->
 				<header>
-					<h1><a href="index.php" id="logo">Cajun Restaurant</a></h1>
+					<h1><a href="index.php" id="logo">Ahnvee</a></h1>
 					<nav>
 						<ul id="menu">
 							<li><a href="index.php"><p> Home </p></a></li>
@@ -42,38 +39,12 @@
 <!-- content -->
 				<article id="content">
 					<div class="content_bg">
-						
-<div id="make_reservation">
-
-						<!-- RESERVATIONS -->
-					
-					
-					
-					
-					
-					
-					
-					
-					
-												
-<!DOCTYPE html>
-
-<html>
-<!-- <link rel="stylesheet" href="finalPro.css" type="text/css"> -->
-<head>
-<script type="text/javascript" src="finalPro.js"></script>
-<title>Reservations</title>
-</head>
-
-
-
-<body>
-<div id="reservationContent">
-<h1 id="reservationsHeading">Thank you</h1>
-<br />
-<br />
-<br />
-<div id="confirmation">
+						<div id="mainContent">
+							<h1 id="mainHeading">Thank you</h1>
+							<br />
+							<br />
+							<br />
+							<div id="confirmation">
 <?php
 
 $conn = mysql_connect('localhost','user1','user1pass');

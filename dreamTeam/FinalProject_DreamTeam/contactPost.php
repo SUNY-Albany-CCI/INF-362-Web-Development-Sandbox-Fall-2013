@@ -12,7 +12,6 @@ $message = "
 Name: $fName $lName
 E-mail: $email
 
-
 Message: $comment";
 
 mail($myemail,$subject,$message);

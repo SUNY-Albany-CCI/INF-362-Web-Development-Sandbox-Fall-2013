@@ -1,33 +1,15 @@
-/* Getting the new tags to behave */
 article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block}
 mark, rp, rt, ruby, summary, time {display:inline}
 
-/* Left & Right alignment */
-.left {float:left}
-.right {float:right}
 .wrapper {width:100%;overflow:hidden}
 .wrap{overflow:hidden;width:965px;margin-left:-5px;padding-left:5px}
 
-/* Global properties */
 body {
 background:url(../images/bg_bot.jpg) center 0 repeat #faf3ed;
 border:0;
 font:14px Georgia, "Times New Roman", Times, serif;
 color:#200;
 line-height:24px
-}
-
-.ic, .ic a {
-border:0;
-float:right;
-background:#fff;
-color:#f00;
-width:50%;
-line-height:10px;
-font-size:10px;
-margin:-220% 0 0 0;
-overflow:hidden;
-padding:0
 }
 
 .css3 {
@@ -42,7 +24,7 @@ position:relative
 
 /* Global Structure */
 .main {	margin:0 auto;	width:960px}
-.body1 {background:url(../images/Seafood-Dish-2.jpg) top center no-repeat}
+.body {background:url(../images/Seafood-Dish-2.jpg) top center no-repeat}
 .body2 {background:#faf3ed} 
 .body3 {background:url(../images/bg_bot.jpg) top center repeat}
 .body4 {background:url(../images/bg_bot_img.jpg) top center no-repeat}
@@ -133,9 +115,9 @@ color:#1e0000;
 text-decoration:underline;
 }
 
-.content_bg {width:100%;height:600px;background:url(../images/bg_slider.jpg) 0 0 repeat;position:relative;overflow:hidden;box-shadow:0 0 5px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 5px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .4);margin-bottom:35px}
+.content_bg {width:100%;height:100%;background:url(../images/bg_slider.jpg) 0 0 repeat;position:relative;overflow:hidden;box-shadow:0 0 5px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 5px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .4);margin-bottom:35px}
 
-.slider_bg {width:100%;height:404px;background:url(../images/bg_slider.jpg) 0 0 no-repeat;position:relative;overflow:hidden;box-shadow:0 0 5px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 5px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .4);margin-bottom:35px}
+.slideshow {width:100%;height:404px;background:url(../images/bg_slider.jpg) 0 0 no-repeat;position:relative;overflow:hidden;box-shadow:0 0 5px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 5px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .4);margin-bottom:35px}
 .slider {top:10px;right:10px;position:absolute;z-index:1;width:920px}
 .slider .items {display:none}
 .slider .pic {float:right;position:relative}
@@ -183,17 +165,16 @@ text-decoration:underline;
 .comboButton {display:inline-block;font-size:20px;color:#faf3ed;line-height:34px;padding:0 4px;background:#a80002;letter-spacing:-1px}
 .comboButton:hover {text-decoration:none;color:#1e0000;background:#faf3ed}
 
-
-#reservationsHeading {
+#mainHeading {
 font-size:40px;
-padding-bottom:35px;
 color:#771b0e;
 }
 
-#reservationContent {
+#mainContent {
 padding-left:40px;
-width:500px;
+width:700px;
 padding-top:40px;
+padding-bottom:50px;
 }
 
 #reservationInput {
@@ -220,7 +201,7 @@ width:130px;
 padding-left:40px;
 }
 
-#contactForm {
+#inputForm {
 padding-left:40px;
 }
 
@@ -229,14 +210,21 @@ padding:15px;
 }
 
 #menuTable tr {
-width:100px;
+width:300px;
+}
+
+#menuTable td {
+width:400px;
 }
 
 #menuTable {
+width:1000px;
 margin-left:30px;
 margin-top:30px;
 }
 
-
+#price {
+text-align:center;
+}
 
 
