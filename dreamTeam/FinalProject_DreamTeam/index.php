@@ -57,11 +57,11 @@
 								<li>
 									<img src="images/img1.jpg" alt="">
 									<div class="banner">
-										<strong>Combo<span>specials</span></strong>
-										<b>This week only</b>
+										<strong>Pan Seared<span>Pork Loin</span></strong>
+										<b></b>
 										<p>
-											<span>If you order any of the main dishes this<br>
-											week, you will get the choice of either a free appetizer or a free dessert.</span>
+											<span>Organically raised local pork loin<br>
+											served with caramelized pear and and fennel compote</span>
 										</p>
 										<a href="#" class="comboButton">Order now</a>
 									</div>
@@ -69,21 +69,21 @@
 								<li>
 									<img src="images/img2.jpg" alt="">
 									<div class="banner">
-										<strong>Deep South<span>Chicken</span></strong>
-										<b>Dish of the Week</b>
+										<strong>Kegs &<span>Casks</span></strong>
+										<b>Local druaghts</b>
 										<p>
-											<span>Try our new and delicious <br> Deep South Chicken. <br>Available both for online orders <br>and in restaurant.</span>
+											<span>Try one of our <br> constantly rotating draughts. <br>Selections rotate<br>seasonaly.</span>
 										</p>
 									</div>
 								</li>
 								<li>
 									<img src="images/img3.jpg" alt="">
 									<div class="banner">
-										<strong>French-Style<span>Tartlet</span></strong>
-										<b>Dish of the Day</b>
+										<strong>Belgian<span>Waffles</span></strong>
+										<b>Desert of the month</b>
 										<p>
-											<span>Lorem ipsum dolamet consectetur <br>
-											adipisicing elit, sed do eiusmod tempor aliqua enim ad minim veniam, quis nosinci- didunt ut labore et dolore.</span>
+											<span>Smothered in the best local berries <br>
+											We work with local farms and growers to source the best fruits to cover our secret-recipe waffles</span>
 										</p>
 									</div>
 								</li>
