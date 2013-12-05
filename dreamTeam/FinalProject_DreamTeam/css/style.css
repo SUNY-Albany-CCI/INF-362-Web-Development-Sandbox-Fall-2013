@@ -1,33 +1,15 @@
-/* Getting the new tags to behave */
 article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block}
 mark, rp, rt, ruby, summary, time {display:inline}
 
-/* Left & Right alignment */
-.left {float:left}
-.right {float:right}
 .wrapper {width:100%;overflow:hidden}
 .wrap{overflow:hidden;width:965px;margin-left:-5px;padding-left:5px}
 
-/* Global properties */
 body {
 background:url(../images/bg_bot.jpg) center 0 repeat #faf3ed;
 border:0;
-font:14px, Helvetica, sans-serif;
+font:14px Georgia, "Times New Roman", Times, serif;
 color:#200;
 line-height:24px
-}
-
-.ic, .ic a {
-border:0;
-float:right;
-background:#fff;
-color:#f00;
-width:50%;
-line-height:10px;
-font-size:10px;
-margin:-220% 0 0 0;
-overflow:hidden;
-padding:0
 }
 
 .css3 {
@@ -42,7 +24,7 @@ position:relative
 
 /* Global Structure */
 .main {	margin:0 auto;	width:960px}
-.body1 {background:url(../images/Seafood-Dish.jpg) top center no-repeat}
+.body {background:url(../images/Seafood-Dish-2.jpg) top center no-repeat}
 .body2 {background:#faf3ed} 
 .body3 {background:url(../images/bg_bot.jpg) top center repeat}
 .body4 {background:url(../images/bg_bot_img.jpg) top center no-repeat}
@@ -119,22 +101,23 @@ font-size:22px;
 font-style:bold;
 color:#faf3ed;
 line-height:40px;
-padding-top:10px;
+padding-top:5px;
 padding-left:21px;
 padding-right:20px;
-padding-bottom:10px;
-height:40px;
+padding-bottom:15px;
+height:30px;
 letter-spacing:-1px;
 }
 
 #menu li a:hover, #menu .active a {
-background:#771b0e;
+background:#faf3ed;
+color:#1e0000;
 text-decoration:underline;
 }
 
-.content_bg {width:100%;height:404px;background:url(../images/bg_slider.jpg) 0 0 no-repeat;position:relative;overflow:hidden;box-shadow:0 0 5px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 5px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .4);margin-bottom:35px}
+.content_bg {width:100%;height:100%;background:url(../images/bg_slider.jpg) 0 0 repeat;position:relative;overflow:hidden;box-shadow:0 0 5px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 5px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .4);margin-bottom:35px}
 
-.slider_bg {width:100%;height:404px;background:url(../images/bg_slider.jpg) 0 0 no-repeat;position:relative;overflow:hidden;box-shadow:0 0 5px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 5px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .4);margin-bottom:35px}
+.slideshow {width:100%;height:404px;background:url(../images/bg_slider.jpg) 0 0 no-repeat;position:relative;overflow:hidden;box-shadow:0 0 5px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 5px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .4);margin-bottom:35px}
 .slider {top:10px;right:10px;position:absolute;z-index:1;width:920px}
 .slider .items {display:none}
 .slider .pic {float:right;position:relative}
@@ -154,16 +137,21 @@ text-decoration:underline;
 .pad_bot1 {padding-bottom:13px}
 .pad_bot2 {padding-bottom:24px}
 .marg_right1 {margin-right:20px}
-.box {background:url(../images/box_bg.png) repeat;color:#faf3ed;box-shadow:0 0 5px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 5px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .4)}
+.box {background-color:#771b0e;color:#faf3ed;}
 .box > div {background:url(../images/box_top.png) 0 top no-repeat;padding:30px;padding-top:0;overflow:hidden}
-.box h2 {color:#b53813;padding:15px 0 12px 0}
+.box h2 {color:#faf3ed;padding:15px 0 12px 0}
 .box h2 span {color:#faf3ed}
 .box figure {padding-bottom:13px}
 .list1 li a {font-style:italic;padding-left:12px;background:url(../images/marker_1.gif) 1px 8px no-repeat;color:#faf3ed}
 .list_1 {color:#fff}
 .list_1:hover {text-decoration:none}
-.button1 {display:inline-block;font-size:20px;color:#faf3ed;line-height:34px;padding:0 15px;background:#b53813;letter-spacing:-1px}
-.button1:hover {text-decoration:none;color:#1e0000;background:#faf3ed}
+.button1 {display:inline-block;font-size:20px;color:#faf3ed;line-height:34px;padding:0 15px;background:#771b0e;letter-spacing:-1px}
+.button1:hover {text-decoration:none;color:#771b0e;background:#faf3ed}
+
+.button2 {display:inline-block;font-size:20px;color:#771b0e;line-height:34px;padding:0 15px;background:#faf3ed;letter-spacing:-1px}
+.button2:hover {text-decoration:none;color:#faf3ed;background:#771b0e}
+
+
 .line1 {background:url(../images/line_vert1.gif) 285px 0 repeat-y}
 .line2 {background:url(../images/line_vert1.gif) 615px 0 repeat-y}
 .price {margin-top:-7px}
@@ -177,23 +165,66 @@ text-decoration:underline;
 .comboButton {display:inline-block;font-size:20px;color:#faf3ed;line-height:34px;padding:0 4px;background:#a80002;letter-spacing:-1px}
 .comboButton:hover {text-decoration:none;color:#1e0000;background:#faf3ed}
 
-/* footer */
-footer {height:138px;font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;color:#b53813;line-height:18px}
-footer a {color:#b53813;text-decoration:underline}
-footer a:hover {text-decoration:none}
-#icons {padding:5px 0 0 0}
-#icons li {float:left;padding-right:9px}
+#mainHeading {
+font-size:40px;
+color:#771b0e;
+}
 
-/* Tooltips */
-.aToolTip {background:#a80002;color:#fff;	margin:0;padding:2px 10px 3px;font-size:11px;position:absolute;line-height:17px}
-.aToolTip .aToolTipContent {position:relative;	margin:0;padding:0}
+#mainContent {
+padding-left:40px;
+width:700px;
+padding-top:40px;
+padding-bottom:50px;
+}
 
-/* forms */
-#ContactForm {margin-top:-5px;width:910px}
-#ContactForm span {float:left;width:111px;line-height:20px}
-#ContactForm .wrapper {min-height:24px}
-#ContactForm .textarea_box {min-height:170px;width:100%;overflow:hidden;padding-bottom:9px}
-#ContactForm {}
-#ContactForm a {margin-left:20px;float:right}
-#ContactForm .input {width:399px;height:18px;background:#faf3ed;padding:1px 5px;color:#220000;font:14px Georgia, "Times New Roman", Times, serif;margin:0;float:left}
-#ContactForm textarea {overflow:auto;width:789px;height:163px;background:#faf3ed;padding:1px 5px;color:#220000;font:14px Georgia, "Times New Roman", Times, serif;margin:0}
+#reservationInput {
+font-size:18px;
+}
+
+#reservationInput td {
+padding-bottom:15px;
+}
+
+#phone {
+width:100px;
+}
+
+#email {
+width:200px;
+}
+
+#date {
+width:130px;
+}
+
+#confirmation {
+padding-left:40px;
+}
+
+#inputForm {
+padding-left:40px;
+}
+
+#menuTable, th, td, tr {
+padding:15px;
+}
+
+#menuTable tr {
+width:300px;
+}
+
+#menuTable td {
+width:400px;
+}
+
+#menuTable {
+width:1000px;
+margin-left:30px;
+margin-top:30px;
+}
+
+#price {
+text-align:center;
+}
+
+
