@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Joseph Tersigni</Author>
+  <LastAuthor>Joseph Tersigni</LastAuthor>
+  <Created>2013-11-14T21:42:22Z</Created>
+  <LastSaved>2013-11-14T21:44:14Z</LastSaved>
+  <Company>SUNY Albany</Company>
+  <Version>14.0</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12640</WindowHeight>
+  <WindowWidth>17900</WindowWidth>
+  <WindowTopX>10900</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="5" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
+   <Column ss:AutoFitWidth="0" ss:Width="152"/>
+   <Column ss:AutoFitWidth="0" ss:Width="515"/>
+   <Column ss:AutoFitWidth="0" ss:Width="67"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Salads</Data></Cell>
+    <Cell><Data ss:Type="String">Description</Data></Cell>
+    <Cell><Data ss:Type="String">Price</Data></Cell>
+    <Cell><Data ss:Type="String">notes</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">House</Data></Cell>
+    <Cell><Data ss:Type="String">Arugala topped with fresh vegatables with apricot-sherry vinaigrett.</Data></Cell>
+    <Cell><Data ss:Type="Number">7.99</Data></Cell>
+    <Cell><Data ss:Type="String">Vegan</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Turkey en Confit</Data></Cell>
+    <Cell><Data ss:Type="String">Turkey preseverd with salt and herbs, served over arugula with toasted pecans and apple honey-mustard dressing</Data></Cell>
+    <Cell><Data ss:Type="Number">11.99</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Crawfish</Data></Cell>
+    <Cell><Data ss:Type="String">Marinated crawfish tails served over a ned of shredded cabbage with shaved bell pepper and cajun ranch</Data></Cell>
+    <Cell><Data ss:Type="Number">12.99</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">The Wedge</Data></Cell>
+    <Cell><Data ss:Type="String">Iceberg quarter topped with bacon lardons and carmelized onion, covered in blue cheese dressing</Data></Cell>
+    <Cell><Data ss:Type="Number">8.99</Data></Cell>
+    <Cell><Data ss:Type="String">Vegatarian</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>4</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
