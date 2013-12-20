@@ -1,0 +1,28 @@
+#scheduleTable
+{
+	border: 1px solid black;
+}
+#scheduleTable td
+{
+	border: 1px dotted black;
+	width:200px;
+	height:125px;
+	text-align: center;
+}
+.emptyCell
+{
+	height: 30px !important;
+}
+
+#searchBar
+{
+	float:right;
+}
+#navContainer
+{
+	margin-bottom: 50px;	
+}
+h1
+{
+	text-align: center;
+}
